@@ -1,0 +1,54 @@
+:root{
+    --my-header-height:200px;
+    --my-footer-height:100px;
+    --my-page-height:800px;
+    --my-nav-height:23px;
+}
+#container{
+    display: block;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: var(--my-page-height);
+    background-color: gray;
+}
+#logoContainer{
+    height: calc(var(--my-header-height) - var(--my-nav-height));
+}
+#midPart{height: calc(var(--my-page-height) - var(--my-footer-height) - var(--my-header-height));
+}
+nav{text-align: right;
+    height:var(--my-nav-height);
+}
+#mainPart{
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-color: aquamarine;
+ }
+header{
+    height: var(--my-header-height);
+}
+#coverLayer{
+    display: none;
+}
+#loginField{
+    padding: 10px;
+    display: none;
+    background-color: cornsilk;
+    position: fixed;
+    top:200px;
+    left:200px;
+}
+footer{
+    background-color: burlywood;
+    height:var(--my-footer-height);
+}
+#loginForm{}
+#loginForm button{
+width: 100%;
+}
+
+.row{
+    width: 100%;
+}
