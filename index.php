@@ -9,6 +9,9 @@ session_start();
 switch($_SERVER['REQUEST_METHOD']){
     case 'GET' :
         require 'View/index.html.php';
+        session_destroy();
+
+        break;
     case 'POST':break;
     default: break;
 }
