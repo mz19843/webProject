@@ -13,6 +13,7 @@
     background-color: gray;
 }
 #logoContainer{
+    background-image: url("/View/CSS/def.css");
     height: calc(var(--my-header-height) - var(--my-nav-height));
 }
 #midPart{height: calc(var(--my-page-height) - var(--my-footer-height) - var(--my-header-height));
@@ -20,7 +21,11 @@
 nav{text-align: right;
     height:var(--my-nav-height);
 }
+nav>a::after{
+
+}
 #mainPart{
+    overflow: auto;
     width: 100%;
     height: 100%;
     float: right;
@@ -34,7 +39,7 @@ header{
 }
 #loginField{
     padding: 10px;
-    display: none;
+    display: block;
     background-color: cornsilk;
     position: fixed;
     top:200px;

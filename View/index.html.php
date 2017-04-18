@@ -8,36 +8,14 @@
 </head>
 <body>
 <div id="coverLayer"></div>
-<div id="loginField">
-    <form id="loginForm">
-        <label>
-            Username:
-            <input type="text" name="username">
-        </label>
-        <br>
-        <label>
-            Password:
-            <input type="password" name="password">
-        </label>
-        <br>
 
-        <button type="button">Submit</button>
-    </form>
-    <div class="row">
-        <span>Don't have an account? </span><br><span>Please </span><a href="#">Sign Up</a>
-    </div>
-
-</div>
 <div id="container">
     <header class="row">
         <div id="logoContainer">
-            <img src="/View/Img/untitled.svg" alt="logo img">
         </div>
         <nav id="headerNav">
-
-            <a href="#" id="products">Products</a>
-            <a href="#" id="others">Others</a>
-
+            <a href="#" id="products">Products </a>
+            <a href="#" id="others">Others </a>
             <span> Welcome </span>
             <span id="currentUser"> <a href="#" id="userID"> Guest</a> </span>
             <span id="logLink"> Please <a id="loginLink" href="#">Login</a>/<a href="#" id="logonLink">Logon</a></span>
@@ -46,9 +24,9 @@
     </header>
     <div id="midPart" class="row">
         <div id="mainPart">
-            <?php
-            echo session_id();
-            ?>
+            <div id="jsTest">
+
+            </div>
         </div>
     </div>
     <footer class="row">

@@ -5,13 +5,23 @@
  * Date: 2017/4/16
  * Time: PM12:42
  */
+use Frame\GetCons;
+use Frame\Tool\Tools;
+require_once "Frame/GetCons.class.php";
+require_once "Frame/Tool/Tools.php";
+
 session_start();
+
 switch($_SERVER['REQUEST_METHOD']){
     case 'GET' :
-        require 'View/index.html.php';
-        session_destroy();
-
+        require_once 'View/index.html.php';
         break;
-    case 'POST':break;
+    case 'POST':
+        $myConIndex = new GetCons();
+        $ConsUrl=Tools::stitchURL($myConIndex->getConsArray());
+        //echo 'Cons'.$ConsUrl.'.php';
+        //require_once 'Cons/Login.php';
+        require 'Cons'.$ConsUrl.'.php';
+        break;
     default: break;
 }
