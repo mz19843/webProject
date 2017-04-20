@@ -14,7 +14,7 @@
 }
 #logoContainer{
     background-image: url("/View/CSS/def.css");
-    height: calc(var(--my-header-height) - var(--my-nav-height));
+    height: calc( var(--my-header-height) -  var(--my-nav-height));
 }
 #midPart{height: calc(var(--my-page-height) - var(--my-footer-height) - var(--my-header-height));
 }
@@ -53,7 +53,18 @@ footer{
 #loginForm button{
 width: 100%;
 }
-
+#signUp{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    left:auto;
+    top:auto;
+    background-color: gray;
+}
+#signUp label{
+    width:150px;
+    display: inline-block;
+}
 .row{
     width: 100%;
 }

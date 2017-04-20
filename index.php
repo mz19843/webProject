@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: YimingMa
@@ -17,11 +18,12 @@ switch($_SERVER['REQUEST_METHOD']){
         require_once 'View/index.html.php';
         break;
     case 'POST':
-        $myConIndex = new GetCons();
-        $ConsUrl=Tools::stitchURL($myConIndex->getConsArray());
+        if($_POST['action']){
+            require 'Cons/'.$_POST['action'].'.php';
+        }
         //echo 'Cons'.$ConsUrl.'.php';
         //require_once 'Cons/Login.php';
-        require 'Cons'.$ConsUrl.'.php';
+
         break;
     default: break;
 }

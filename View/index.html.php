@@ -18,9 +18,8 @@
             <a href="#" id="others">Others </a>
             <span> Welcome </span>
             <span id="currentUser"> <a href="#" id="userID"> Guest</a> </span>
-            <span id="logLink"> Please <a id="loginLink" href="#">Login</a>/<a href="#" id="logonLink">Logon</a></span>
+            <span id="logLink"> Please <a class="loginLink" href="#">Login</a>/<a href="#" class="signupLink">Sign Up</a></span>
         </nav>
-
     </header>
     <div id="midPart" class="row">
         <div id="mainPart">

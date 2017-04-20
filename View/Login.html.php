@@ -14,7 +14,7 @@
         <button type="button">Submit</button>
     </form>
     <div class="row">
-        <span>Don't have an account? </span><br><span>Please </span><a href="#">Sign Up</a>
+        <span>Don't have an account? </span><br><span>Please </span><a href="#" onclick="signUp()" class="signupLink">Sign Up</a>
     </div>
 </div>
 <?php
